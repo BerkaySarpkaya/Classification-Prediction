@@ -65,9 +65,11 @@ Among all the different cases, the normalized and dimensionality reduction appli
 
 <em>Figure 1. Confusion matrix of the catboost model - 96.39% accuracy on validation set</em>
 
+
 After Hyperparameter tuning held on the final model, accuracy had slightly increased to 0.9641 on validation set.
 
-The final model's accuracy score was 0.9966 on the Test Set with confusion matrix:
+
+The final model's accuracy score was 0.9666 on the Test Set with confusion matrix:
 
 <img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Best%20Catboost-Test%20Set.PNG" alt="Figure 2">
 
