@@ -36,7 +36,7 @@ The other side aims were:
 - LightGBM Version: 4.0.0
 - Catboost Version: 1.2.2
 
-The code file WBS can be seen on the following link AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+The WBS of the code can be seen on the following link AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ## Dataset
 
@@ -90,9 +90,6 @@ The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/da
 ## Further Work and Improvements
 
 - Dimenasionality reduction applied dataset was only performed with normalization method. It could have been also combined with other methods to improve the performance.
- 
 - A more comprehensive hyperparameter tune process can be applied.
-  
 - According to the final confusion matrix, misclassified data can be examined to understand which type of feature combination observations lead to misclassification and the training data can be feed with them more to evolve the model.
-
 - Hyperparameter tuning could be applied to multiple models as the default accuracies were too close to each other.
