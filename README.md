@@ -55,14 +55,22 @@ The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/da
  ## Model Selection and Training
 
 - Accuracy Score was choosen as the main metric because the target variable has balanced output values
-- A range of user-ready models were selected including logistic regression, KNN, Perceptron, SVC, Bagging and Boosting Decision Tree algorithms. 
+- A range of user-ready models were selected including logistic regression, KNN, Perceptron, SVC, Bagging and Boosting Decision Tree algorithms.
 - On top of that, a basic ANN architecture was modeled with kernel-regularizer(l2=0.01). Linear activation at the and node and (from_logits=True) argument with loss function were also used to prevent computational errors by treating the output as a raw unbounded score rather than probability.
 - "Different model X different scaling method" combinations were performed to see the best Accuracy Score.
 
-Among all the different cases, the normalized and dimensionality reduction applied dataset with catboost algorithm had the best accuracy of 0.964 with the following confusion matrix
+Among all the different cases, the normalized and dimensionality reduction applied dataset with catboost algorithm had the best accuracy of 0.9639 with the following confusion matrix
 
-<img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Confusion-Matrix-DR-Normalized-Catboost.PNG" alt="Figure 1" {width=50%}>
+<img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Confusion-Matrix-DR-Normalized-Catboost.PNG" alt="Figure 1">
 
-<em>Figure 1. Confusion matrix of the catboost model - 96.4% accuracy</em>
+<em>Figure 1. Confusion matrix of the catboost model - 96.39% accuracy on validation set</em>
 
-After Hyperparameter tuning held on the final model, accuracy has increased to 
+After Hyperparameter tuning held on the final model, accuracy had slightly increased to 0.9641 on validation set.
+
+The final model's accuracy score was 0.9966 on the Test Set with confusion matrix:
+
+<img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Best%20Catboost-Test%20Set.PNG" alt="Figure 2">
+
+<em>Figure 2. Confusion matrix of the hyperparameter tuned catboost model - 96.66% accuracy on test set</em>
+
+
