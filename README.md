@@ -8,7 +8,7 @@ It is a binary classification modelling project predicting whether flight passen
 * [Requirements](#Requirements)
 * [Dataset](#Dataset)
 * [Data Preparation](#Data-Preparation)
-* [Feature Engineering and Data Visualisation](#Feature-Engineering-and-Data-Visualisation)
+* [Feature Engineering and Scaling](#Feature-Engineering-and-Scaling)
 * [Model Selection and Training](#Model-Selection-and-Training)
 * [Evaluation](#Evaluation)
 * [Further Work and Improvements](#Further-Work-and-Improvements)
@@ -61,6 +61,8 @@ The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/da
 
 Among all the different cases, the normalized and dimensionality reduction applied dataset with catboost algorithm had the best accuracy of 0.964 with the following confusion matrix
 
-<img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Confusion-Matrix-DR-Normalized-Catboost.PNG" alt="Figure 1">
+<img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Confusion-Matrix-DR-Normalized-Catboost.PNG" alt="Figure 1" {width=50%}>
 
 <em>Figure 1. Confusion matrix of the catboost model - 96.4% accuracy</em>
+
+After Hyperparameter tuning held on the final model, accuracy has increased to 
