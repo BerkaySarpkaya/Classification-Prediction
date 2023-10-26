@@ -12,6 +12,7 @@ It is a binary classification modelling project predicting whether flight passen
 * [Model Selection and Evaluation](#Model-Selection-and-Evaluation)
 * [Inferences](#Inferences)
 * [Further Work and Improvements](#Further-Work-and-Improvements)
+* [License](#License)
 <!--te-->
 
 ## Aims and Objectives
@@ -92,3 +93,7 @@ The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/da
 - A more comprehensive hyperparameter tune process can be applied.
 - According to the final confusion matrix, misclassified data can be examined to understand which type of feature combination observations lead to misclassification and the training data can be feed with them more to evolve the model.
 - Hyperparameter tuning could be applied to multiple models as the default accuracies were too close to each other.
+
+## License
+
+This project is licensed under the MIT License. See the <a href="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/LICENSE"> LICENCE</a> file for details.
