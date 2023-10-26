@@ -25,20 +25,20 @@ The other side aims were:
 
 ## Requirements
 
-Python Version: 3.10.12
-Pandas Version: 1.5.3
-Numpy Version: 1.23.5
-Matplotlib Version: 3.7.1
-Seaborn Version: 0.12.2
-Tensorflow Version: 2.14.0
-Scikit-Learn Version: 1.2.2
-XGBoost Version: 2.0.0
-LightGBM Version: 4.0.0
-Catboost Version: 1.2.2
+- Python Version: 3.10.12
+- Pandas Version: 1.5.3
+- Numpy Version: 1.23.5
+- Matplotlib Version: 3.7.1
+- Seaborn Version: 0.12.2
+- Tensorflow Version: 2.14.0
+- Scikit-Learn Version: 1.2.2
+- XGBoost Version: 2.0.0
+- LightGBM Version: 4.0.0
+- Catboost Version: 1.2.2
 
 ## Dataset
 
-The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/datasets/johndddddd/customer-satisfaction/data"> Passenger Satisfaction</a>. It is stated that the origin of the data comes from US Airline passenger satisfaction survey
+The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/datasets/johndddddd/customer-satisfaction/data"> Passenger Satisfaction</a>.) It is stated that the origin of the data comes from US Airline passenger satisfaction survey
 
 ## Data Preparation
 
@@ -46,11 +46,21 @@ The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/da
 - Imputation of missing values were conducted according to features relations
 - After handling missing values, a basic reference model was prepared in order to compare the results with the final model
 
-## Feature Engineering
+## Feature Engineering and Scaling
 
 - PCA analysis and dimensionality reduction held to overcome multicollinearity problem.
-- One feature, did_flight_delay, was generated from the data
-- 3 different scaling method were applied to the data (Min-Max Scaling, Z-Score Scaling, Robust Scaling)
+- One feature, did_flight_delay, was generated from the data. The generated feature did not cause any multicollinearity problems.
+- 3 different scaling method were applied to the data (Min-Max Scaling, Z-Score Scaling, Robust Scaling).
 
-  The generated feature did not have any multicollinearity problem
-  
+ ## Model Selection and Training
+
+- Accuracy Score was choosen as the main metric because the target variable has balanced output values
+- A range of user-ready models were selected including logistic regression, KNN, Perceptron, SVC, Bagging and Boosting Decision Tree algorithms. 
+- On top of that, a basic ANN architecture was modeled with kernel-regularizer(l2=0.01). Linear activation at the and node and (from_logits=True) argument with loss function were also used to prevent computational errors by treating the output as a raw unbounded score rather than probability.
+- "Different model X different scaling method" combinations were performed to see the best Accuracy Score.
+
+Among all the different cases, the normalized and dimensionality reduction applied dataset with catboost algorithm had the best accuracy of 0.964 with the following confusion matrix
+
+<img src="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/Images/Confusion-Matrix-DR-Normalized-Catboost.PNG" alt="Figure 1">
+
+<em>Figure 1. Confusion matrix of the catboost model - 96.4% accuracy</em>
