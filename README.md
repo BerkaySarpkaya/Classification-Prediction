@@ -40,7 +40,7 @@ The side aims were:
 The overview of the code can be seen on the following link <a href="https://github.com/BerkaySarpkaya/Classification-Prediction/blob/main/WBS%20of%20the%20Code.txt"> Overview of the code</a>
 ## Dataset
 
-The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/datasets/johndddddd/customer-satisfaction/data"> Passenger Satisfaction</a>). It is stated that the origin of the data comes from US Airline passenger satisfaction survey
+The data was downloaded directly from Kaggle (<a href="https://www.kaggle.com/datasets/johndddddd/customer-satisfaction/data">Passenger Satisfaction</a>). It is stated that the origin of the data comes from US Airline passenger satisfaction survey
 
 ## Data Preparation
 
