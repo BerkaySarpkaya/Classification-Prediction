@@ -4,7 +4,7 @@ It is a binary classification modelling project predicting whether flight passen
 ## Table of Contents
 
 <!--ts-->
-* [Aims and Objectives](#Aims-and-Objectives)
+* [Objective](#Objective)
 * [Requirements](#Requirements)
 * [Dataset](#Dataset)
 * [Data Preparation](#Data-Preparation)
@@ -15,7 +15,7 @@ It is a binary classification modelling project predicting whether flight passen
 * [License](#License)
 <!--te-->
 
-## Aims and Objectives
+## Objective
 
 The main aim of this case was to build a model that could accurately predict whether passengers were satisfied with their flight or not.
 
