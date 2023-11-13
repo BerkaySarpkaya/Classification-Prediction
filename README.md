@@ -19,7 +19,7 @@ It is a binary classification modelling project predicting whether flight passen
 
 The main aim of this case was to build a model that could accurately predict whether passengers were satisfied with their flight or not.
 
-The other side aims were:
+The side aims were:
 
 - Comparison of the performance of multiple data sets scaled in different ways including: Raw, Normalization, Standardization and Robust Scaling
 - Comparison of different user-ready scikit-learn models and an ANN model created with Tensorflow-Keras
